@@ -23,10 +23,10 @@ jobs:
             docs/**
 
       - name: Show Change Status
-        if: steps.changed-files.outputs.only_changed != true
+        if: steps.changed-files.outputs.only_changed != 'true'
         run: echo "no only change"
 
       - name: Show Change Status
-        if: steps.changed-files.outputs.only_changed == true
+        if: steps.changed-files.outputs.only_changed == 'true'
         run: echo "only change"
 
