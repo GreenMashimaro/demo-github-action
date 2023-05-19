@@ -1,4 +1,4 @@
-naem: Change file
+name: Change file
 
 on:
   push:
