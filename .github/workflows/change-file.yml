@@ -31,6 +31,5 @@ jobs:
         run: echo "only change"
 
       - name: Show variable
-        run: |
-          steps.changed-files.outputs.only_changed: ${{ steps.changed-files.outputs.only_changed }}
+        run: echo "only_changed ${{ steps.changed-files.outputs.only_changed }}."
 
