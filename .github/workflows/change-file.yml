@@ -30,3 +30,7 @@ jobs:
         if: steps.changed-files.outputs.only_changed == 'true'
         run: echo "only change"
 
+      - name: Show variable
+        run: |
+          steps.changed-files.outputs.only_changed: ${{ steps.changed-files.outputs.only_changed }}
+
